@@ -1,0 +1,25 @@
+create calendar Work America/New_York
+create calendar Personal Europe/London
+
+switch calendar Work
+
+create event "Daily Sync" from 2025-07-01T09:00 to 2025-07-01T09:30
+create event "Team Standup" from 2025-07-01T10:00 to 2025-07-01T10:15
+create event "Holiday" on 2025-07-02
+
+print events on 2025-07-01
+show status on 2025-07-01T10:00
+
+edit subject "Team Standup" from 2025-07-01T10:00 with "Daily Standup"
+edits location "Daily Sync" from 2025-07-01T09:00 with "Zoom"
+edit series status "Daily Sync" from 2025-07-01T09:00 with "private"
+
+copy event "Daily Sync" on 2025-07-01T09:00 --target Personal to 2025-08-01T10:00
+copy events on 2025-07-01 --target Personal to 2025-08-02
+copy events between 2025-07-01T00:00 and 2025-07-02T23:59 --target Personal to 2025-08-03T00:00
+
+switch calendar Personal
+print events from 2025-08-01T00:00 to 2025-08-05T23:59
+show status on 2025-08-02T10:00
+
+exit

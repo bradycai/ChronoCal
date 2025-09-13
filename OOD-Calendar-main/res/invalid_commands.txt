@@ -1,0 +1,20 @@
+create event "BadEvent" 2025-06-10
+create event "NoToKeyword" from 2025-06-01T09:00
+create event "Overlap" from 2025-06-01T09:00 2025-06-01T10:00
+create event "AllDayBadFormat" 2025-06-11
+create event "BadWeekday" on 2025-06-05 repeats Z for 2
+create event "MissingRepeatDetails" on 2025-06-06 repeats MTWR
+create event "UnclosedSubject from 2025-06-07T10:00 to 2025-06-07T11:00
+create event "Incomplete" from 2025-06-01T08:00 to
+print events at 2025-06-01
+show status on someday
+edit event subject "TeamSync" from 2025-06-01T09:00
+edit event subject "TeamSync" 2025-06-01T09:00 with "NewTeamSync"
+edit event foo "Meeting" from 2025-06-01T10:00 with "x"
+edit event subject Daily Sync from 2025-06-01T09:00 with "Check-In"
+copy event "Standup" on 2025-06-01T09:00 to 2025-06-08T09:00
+copy events between 2025-06-01 2025-06-03 --target Personal to 2025-06-10T09:00
+switch calendar NonExistent
+create calendar Work Mars/Phobos
+rename calendar Work NewWork
+delete calendar GhostCalendar

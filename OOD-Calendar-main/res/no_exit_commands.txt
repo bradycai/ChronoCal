@@ -1,0 +1,12 @@
+create calendar Work America/New_York
+create calendar Personal Europe/London
+
+switch calendar Work
+
+create event "Planning" from 2025-07-01T10:00 to 2025-07-01T11:00
+create event "Check-In" on 2025-07-02
+
+switch calendar Personal
+
+create event "Workout" on 2025-07-03
+print events on 2025-07-03

@@ -1,0 +1,58 @@
+USEME: Calendar Application (Part 3 GUI)
+
+Launching the Program
+Launch the program in GUI mode:
+
+java -jar OOD-Calendar.jar --mode gui
+The GUI window will open as shown.
+
+Supported GUI Operations
+1️⃣ View Events for a Specific Day
+Enter a date into the box labeled:Date (yyyy-MM-dd)
+Click View Schedule to load all events scheduled for that day.
+
+2️⃣ Create New Event
+Fill in the following fields:
+
+Subject: The name of the event.
+
+Start (yyyy-MM-dd'T'HH:mm): Event start time.
+
+End (yyyy-MM-dd'T'HH:mm): Event end time.
+
+Click Create Event to add the event to the calendar.
+
+Use View Schedule to refresh and see the newly added event.
+
+3️⃣ Clear Fields
+Click Clear Fields to reset all input fields.
+
+4️⃣ Edit Existing Event
+Select an event from the Schedule View.
+
+Click Edit Selected Event.
+
+Modify any of the fields (subject, start time, end time).
+
+Click Save to apply changes.
+
+Limitations of Current GUI
+The GUI only supports:
+
+Viewing events by day
+
+Creating single events
+
+Editing existing events
+
+The following features are only supported via command-line controller mode:
+
+Multiple calendars
+
+Timezone editing
+
+Recurring events
+
+Copying events between calendars
+
+Full weekly or monthly schedule view
